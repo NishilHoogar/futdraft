@@ -1,0 +1,290 @@
+[
+  {
+    "country": "Brazil",
+    "year": 2002,
+    "flag": "🇧🇷",
+    "players": [
+      { "name": "Marcos", "overall": 85, "positions": ["GK"] },
+      { "name": "Lúcio", "overall": 86, "positions": ["CB"] },
+      { "name": "Roque Júnior", "overall": 82, "positions": ["CB"] },
+      { "name": "Edmílson", "overall": 84, "positions": ["CB", "CDM"] },
+      { "name": "Cafu", "overall": 89, "positions": ["RB", "RWB"] },
+      { "name": "Gilberto Silva", "overall": 85, "positions": ["CM", "CDM"] },
+      { "name": "Kleberson", "overall": 83, "positions": ["CM", "CAM"] },
+      { "name": "Roberto Carlos", "overall": 90, "positions": ["LB", "LWB"] },
+      { "name": "Rivaldo", "overall": 91, "positions": ["CAM", "LW"] },
+      { "name": "Ronaldinho", "overall": 91, "positions": ["CAM", "LW", "ST"] },
+      { "name": "Ronaldo", "overall": 97, "positions": ["ST"] }
+    ]
+  },
+  {
+    "country": "France",
+    "year": 1998,
+    "flag": "🇫🇷",
+    "players": [
+      { "name": "Barthez", "overall": 87, "positions": ["GK"] },
+      { "name": "Lizarazu", "overall": 86, "positions": ["LB"] },
+      { "name": "Blanc", "overall": 88, "positions": ["CB"] },
+      { "name": "Desailly", "overall": 89, "positions": ["CB", "CDM"] },
+      { "name": "Thuram", "overall": 88, "positions": ["RB", "CB"] },
+      { "name": "Petit", "overall": 85, "positions": ["CM", "LM"] },
+      { "name": "Deschamps", "overall": 86, "positions": ["CDM", "CM"] },
+      { "name": "Karembeu", "overall": 84, "positions": ["CM", "RM"] },
+      { "name": "Zidane", "overall": 96, "positions": ["CAM", "CM"] },
+      { "name": "Djorkaeff", "overall": 87, "positions": ["CAM", "ST"] },
+      { "name": "Henry", "overall": 88, "positions": ["ST", "LW"] }
+    ]
+  },
+  {
+    "country": "Germany",
+    "year": 2014,
+    "flag": "🇩🇪",
+    "players": [
+      { "name": "Neuer", "overall": 96, "positions": ["GK"] },
+      { "name": "Höwedes", "overall": 83, "positions": ["LB", "CB"] },
+      { "name": "Hummels", "overall": 89, "positions": ["CB"] },
+      { "name": "Boateng", "overall": 88, "positions": ["CB", "RB"] },
+      { "name": "Lahm", "overall": 90, "positions": ["RB", "CDM"] },
+      { "name": "Schweinsteiger", "overall": 88, "positions": ["CM", "CDM"] },
+      { "name": "Khedira", "overall": 86, "positions": ["CM", "CDM"] },
+      { "name": "Kroos", "overall": 90, "positions": ["CM", "CAM"] },
+      { "name": "Özil", "overall": 89, "positions": ["CAM", "LW"] },
+      { "name": "Müller", "overall": 89, "positions": ["ST", "CAM", "RW"] },
+      { "name": "Klose", "overall": 87, "positions": ["ST"] }
+    ]
+  },
+  {
+    "country": "Argentina",
+    "year": 1986,
+    "flag": "🇦🇷",
+    "players": [
+      { "name": "Pumpido", "overall": 84, "positions": ["GK"] },
+      { "name": "Olarticoechea", "overall": 81, "positions": ["LB", "LWB"] },
+      { "name": "Brown", "overall": 83, "positions": ["CB"] },
+      { "name": "Ruggeri", "overall": 85, "positions": ["CB"] },
+      { "name": "Batti", "overall": 82, "positions": ["RB"] },
+      { "name": "Enrique", "overall": 83, "positions": ["CM", "LM"] },
+      { "name": "Burruchaga", "overall": 86, "positions": ["CM", "CAM"] },
+      { "name": "Giusti", "overall": 84, "positions": ["CM", "RM"] },
+      { "name": "Maradona", "overall": 98, "positions": ["CAM", "ST"] },
+      { "name": "Valdano", "overall": 87, "positions": ["ST", "CAM"] },
+      { "name": "Caniggia", "overall": 86, "positions": ["ST", "LW"] }
+    ]
+  },
+  {
+    "country": "Italy",
+    "year": 2006,
+    "flag": "🇮🇹",
+    "players": [
+      { "name": "Buffon", "overall": 95, "positions": ["GK"] },
+      { "name": "Grosso", "overall": 84, "positions": ["LB", "LWB"] },
+      { "name": "Cannavaro", "overall": 93, "positions": ["CB"] },
+      { "name": "Materazzi", "overall": 85, "positions": ["CB"] },
+      { "name": "Zambrotta", "overall": 88, "positions": ["RB", "LB"] },
+      { "name": "Perrotta", "overall": 84, "positions": ["CM", "RM"] },
+      { "name": "Gattuso", "overall": 88, "positions": ["CDM", "CM"] },
+      { "name": "Pirlo", "overall": 92, "positions": ["CM", "CDM", "CAM"] },
+      { "name": "Totti", "overall": 90, "positions": ["CAM", "ST"] },
+      { "name": "Del Piero", "overall": 89, "positions": ["ST", "CAM", "LW"] },
+      { "name": "Toni", "overall": 87, "positions": ["ST"] }
+    ]
+  },
+  {
+    "country": "Spain",
+    "year": 2010,
+    "flag": "🇪🇸",
+    "players": [
+      { "name": "Casillas", "overall": 95, "positions": ["GK"] },
+      { "name": "Capdevila", "overall": 83, "positions": ["LB"] },
+      { "name": "Piqué", "overall": 88, "positions": ["CB"] },
+      { "name": "Puyol", "overall": 90, "positions": ["CB"] },
+      { "name": "Ramos", "overall": 89, "positions": ["RB", "CB"] },
+      { "name": "Busquets", "overall": 88, "positions": ["CDM", "CM"] },
+      { "name": "Xabi Alonso", "overall": 90, "positions": ["CM", "CDM"] },
+      { "name": "Xavi", "overall": 94, "positions": ["CM", "CAM"] },
+      { "name": "Iniesta", "overall": 93, "positions": ["CAM", "LW", "CM"] },
+      { "name": "Pedro", "overall": 86, "positions": ["RW", "ST", "LW"] },
+      { "name": "Villa", "overall": 90, "positions": ["ST", "LW"] }
+    ]
+  },
+  {
+    "country": "Netherlands",
+    "year": 1974,
+    "flag": "🇳🇱",
+    "players": [
+      { "name": "Jongbloed", "overall": 83, "positions": ["GK"] },
+      { "name": "Krol", "overall": 87, "positions": ["LB", "CB"] },
+      { "name": "Rijsbergen", "overall": 84, "positions": ["CB"] },
+      { "name": "Haan", "overall": 85, "positions": ["CB", "CDM"] },
+      { "name": "Suurbier", "overall": 84, "positions": ["RB"] },
+      { "name": "Jansen", "overall": 84, "positions": ["CM", "LM"] },
+      { "name": "Neeskens", "overall": 89, "positions": ["CM", "CDM"] },
+      { "name": "Van Hanegem", "overall": 88, "positions": ["CM", "CAM"] },
+      { "name": "Rep", "overall": 88, "positions": ["CAM", "ST", "LW"] },
+      { "name": "Rensenbrink", "overall": 87, "positions": ["LW", "CAM"] },
+      { "name": "Cruyff", "overall": 97, "positions": ["ST", "CAM"] }
+    ]
+  },
+  {
+    "country": "England",
+    "year": 1966,
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "players": [
+      { "name": "Banks", "overall": 91, "positions": ["GK"] },
+      { "name": "Wilson", "overall": 83, "positions": ["LB"] },
+      { "name": "Jack Charlton", "overall": 85, "positions": ["CB"] },
+      { "name": "Moore", "overall": 93, "positions": ["CB", "CDM"] },
+      { "name": "Cohen", "overall": 84, "positions": ["RB"] },
+      { "name": "Ball", "overall": 86, "positions": ["CM", "RM"] },
+      { "name": "Stiles", "overall": 84, "positions": ["CDM", "CM"] },
+      { "name": "Peters", "overall": 85, "positions": ["CM", "CAM"] },
+      { "name": "Hurst", "overall": 87, "positions": ["ST", "CAM"] },
+      { "name": "Hunt", "overall": 85, "positions": ["ST", "LW"] },
+      { "name": "Charlton", "overall": 91, "positions": ["CAM", "CM"] }
+    ]
+  },
+  {
+    "country": "Brazil",
+    "year": 1970,
+    "flag": "🇧🇷",
+    "players": [
+      { "name": "Félix", "overall": 84, "positions": ["GK"] },
+      { "name": "Everaldo", "overall": 84, "positions": ["LB"] },
+      { "name": "Britto", "overall": 85, "positions": ["CB"] },
+      { "name": "Piazza", "overall": 86, "positions": ["CB", "CDM"] },
+      { "name": "Carlos Alberto", "overall": 90, "positions": ["RB"] },
+      { "name": "Clodoaldo", "overall": 86, "positions": ["CM", "CDM"] },
+      { "name": "Gérson", "overall": 89, "positions": ["CM", "CAM"] },
+      { "name": "Rivellino", "overall": 90, "positions": ["CAM", "LW"] },
+      { "name": "Jairzinho", "overall": 90, "positions": ["RW", "ST"] },
+      { "name": "Tostão", "overall": 89, "positions": ["ST", "CAM"] },
+      { "name": "Pelé", "overall": 99, "positions": ["ST", "CAM"] }
+    ]
+  },
+  {
+    "country": "Germany",
+    "year": 1990,
+    "flag": "🇩🇪",
+    "players": [
+      { "name": "Illgner", "overall": 86, "positions": ["GK"] },
+      { "name": "Brehme", "overall": 89, "positions": ["LB", "LWB"] },
+      { "name": "Kohler", "overall": 87, "positions": ["CB"] },
+      { "name": "Augenthaler", "overall": 85, "positions": ["CB"] },
+      { "name": "Reuter", "overall": 85, "positions": ["RB"] },
+      { "name": "Häßler", "overall": 87, "positions": ["CM", "CAM"] },
+      { "name": "Buchwald", "overall": 85, "positions": ["CDM", "CB"] },
+      { "name": "Lothar Matthäus", "overall": 93, "positions": ["CM", "CDM", "CAM"] },
+      { "name": "Thon", "overall": 85, "positions": ["CAM", "CM"] },
+      { "name": "Völler", "overall": 89, "positions": ["ST"] },
+      { "name": "Klinsmann", "overall": 90, "positions": ["ST", "LW"] }
+    ]
+  },
+  {
+    "country": "France",
+    "year": 2018,
+    "flag": "🇫🇷",
+    "players": [
+      { "name": "Lloris", "overall": 89, "positions": ["GK"] },
+      { "name": "Hernández", "overall": 85, "positions": ["LB", "LWB"] },
+      { "name": "Umtiti", "overall": 87, "positions": ["CB"] },
+      { "name": "Varane", "overall": 89, "positions": ["CB"] },
+      { "name": "Pavard", "overall": 84, "positions": ["RB", "CB"] },
+      { "name": "Kanté", "overall": 91, "positions": ["CDM", "CM"] },
+      { "name": "Pogba", "overall": 89, "positions": ["CM", "CAM"] },
+      { "name": "Matuidi", "overall": 86, "positions": ["CM", "LM"] },
+      { "name": "Griezmann", "overall": 90, "positions": ["CAM", "ST", "LW"] },
+      { "name": "Mbappé", "overall": 91, "positions": ["ST", "LW", "RW"] },
+      { "name": "Giroud", "overall": 85, "positions": ["ST"] }
+    ]
+  },
+  {
+    "country": "Argentina",
+    "year": 2022,
+    "flag": "🇦🇷",
+    "players": [
+      { "name": "Martínez", "overall": 90, "positions": ["GK"] },
+      { "name": "Tagliafico", "overall": 84, "positions": ["LB", "LWB"] },
+      { "name": "Otamendi", "overall": 86, "positions": ["CB"] },
+      { "name": "Romero", "overall": 88, "positions": ["CB"] },
+      { "name": "Molina", "overall": 85, "positions": ["RB", "RWB"] },
+      { "name": "De Paul", "overall": 88, "positions": ["CM", "CDM"] },
+      { "name": "Enzo Fernández", "overall": 87, "positions": ["CM", "CDM"] },
+      { "name": "Mac Allister", "overall": 86, "positions": ["CM", "CAM"] },
+      { "name": "Messi", "overall": 98, "positions": ["CAM", "ST", "RW"] },
+      { "name": "Álvarez", "overall": 87, "positions": ["ST", "CAM"] },
+      { "name": "Di María", "overall": 89, "positions": ["RW", "LW", "CAM"] }
+    ]
+  },
+  {
+    "country": "Italy",
+    "year": 1982,
+    "flag": "🇮🇹",
+    "players": [
+      { "name": "Dino Zoff", "overall": 92, "positions": ["GK"] },
+      { "name": "Cabrini", "overall": 87, "positions": ["LB", "LWB"] },
+      { "name": "Gentile", "overall": 86, "positions": ["CB", "RB"] },
+      { "name": "Scirea", "overall": 89, "positions": ["CB", "CDM"] },
+      { "name": "Bergomi", "overall": 85, "positions": ["RB", "CB"] },
+      { "name": "Oriali", "overall": 84, "positions": ["CM", "CDM"] },
+      { "name": "Tardelli", "overall": 87, "positions": ["CM", "CDM"] },
+      { "name": "Conti", "overall": 86, "positions": ["CM", "CAM"] },
+      { "name": "Graziani", "overall": 85, "positions": ["ST", "CAM"] },
+      { "name": "Rossi", "overall": 89, "positions": ["ST", "LW"] },
+      { "name": "Antognoni", "overall": 88, "positions": ["CAM", "CM"] }
+    ]
+  },
+  {
+    "country": "Uruguay",
+    "year": 1950,
+    "flag": "🇺🇾",
+    "players": [
+      { "name": "Máspoli", "overall": 88, "positions": ["GK"] },
+      { "name": "Matosas", "overall": 83, "positions": ["LB"] },
+      { "name": "Tejera", "overall": 84, "positions": ["CB"] },
+      { "name": "Varela", "overall": 89, "positions": ["CB", "CDM"] },
+      { "name": "González", "overall": 83, "positions": ["RB"] },
+      { "name": "Andrade", "overall": 88, "positions": ["CM", "CDM"] },
+      { "name": "Pérez", "overall": 85, "positions": ["CM"] },
+      { "name": "Ghiggia", "overall": 87, "positions": ["RW", "ST"] },
+      { "name": "Míguez", "overall": 86, "positions": ["ST", "CAM"] },
+      { "name": "Schiaffino", "overall": 90, "positions": ["CAM", "ST"] },
+      { "name": "Morán", "overall": 84, "positions": ["LW", "ST"] }
+    ]
+  },
+  {
+    "country": "Spain",
+    "year": 2008,
+    "flag": "🇪🇸",
+    "players": [
+      { "name": "Casillas", "overall": 94, "positions": ["GK"] },
+      { "name": "Capdevila", "overall": 84, "positions": ["LB"] },
+      { "name": "Marchena", "overall": 86, "positions": ["CB"] },
+      { "name": "Puyol", "overall": 91, "positions": ["CB"] },
+      { "name": "Ramos", "overall": 88, "positions": ["RB", "CB"] },
+      { "name": "Senna", "overall": 87, "positions": ["CDM", "CM"] },
+      { "name": "Xabi Alonso", "overall": 89, "positions": ["CM", "CDM"] },
+      { "name": "Xavi", "overall": 93, "positions": ["CM", "CAM"] },
+      { "name": "Iniesta", "overall": 92, "positions": ["CAM", "LW", "CM"] },
+      { "name": "Fàbregas", "overall": 89, "positions": ["CAM", "CM"] },
+      { "name": "Torres", "overall": 90, "positions": ["ST", "LW"] }
+    ]
+  },
+  {
+    "country": "Portugal",
+    "year": 1966,
+    "flag": "🇵🇹",
+    "players": [
+      { "name": "José Pereira", "overall": 84, "positions": ["GK"] },
+      { "name": "Morais", "overall": 82, "positions": ["LB"] },
+      { "name": "Vicente", "overall": 83, "positions": ["CB"] },
+      { "name": "Hilario", "overall": 84, "positions": ["CB", "CDM"] },
+      { "name": "João Morais", "overall": 82, "positions": ["RB"] },
+      { "name": "Jaime Graça", "overall": 84, "positions": ["CM", "RM"] },
+      { "name": "Fernando Cruz", "overall": 83, "positions": ["CM", "CDM"] },
+      { "name": "Simões", "overall": 86, "positions": ["CM", "CAM"] },
+      { "name": "Coluna", "overall": 88, "positions": ["CAM", "CM"] },
+      { "name": "Eusébio", "overall": 95, "positions": ["ST", "CAM"] },
+      { "name": "Torres", "overall": 87, "positions": ["ST", "LW"] }
+    ]
+  }
+]

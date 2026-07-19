@@ -1,0 +1,1074 @@
+/* ============================================
+   World Cup Draft - Global Styles
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --bg-primary: #0B0F14;
+  --bg-secondary: #141A22;
+  --bg-tertiary: #1A2230;
+  --accent-gold: #F5C542;
+  --accent-gold-dim: #C49A2A;
+  --accent-green: #2ECC71;
+  --accent-red: #E74C3C;
+  --accent-blue: #3498DB;
+  --text-primary: #FFFFFF;
+  --text-secondary: #A0AEC0;
+  --text-muted: #64748B;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-glow: rgba(245, 197, 66, 0.3);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(245, 197, 66, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ============================================
+   Formation Selector Screen
+   ============================================ */
+
+.formation-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: radial-gradient(ellipse at center, #141A22 0%, #0B0F14 70%);
+}
+
+.game-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 12px 0;
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title-icon {
+  font-size: 3rem;
+  filter: drop-shadow(0 0 12px rgba(245, 197, 66, 0.5));
+}
+
+.game-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin: 0 0 48px 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.formation-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.formation-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 28px 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.formation-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.05) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.formation-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-gold);
+  box-shadow: var(--shadow-glow), var(--shadow-card);
+}
+
+.formation-card:hover::before {
+  opacity: 1;
+}
+
+.formation-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+.formation-visual {
+  width: 100%;
+  height: 140px;
+  position: relative;
+}
+
+.formation-pitch-mini {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #1a5c1a 0%, #144d14 100%);
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+}
+
+.formation-dot {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: var(--accent-gold);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 6px rgba(245, 197, 66, 0.6);
+}
+
+.formation-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* ============================================
+   Game Screen Layout
+   ============================================ */
+
+.game-screen {
+  display: none;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--bg-primary);
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.game-header-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.game-header-title .header-icon {
+  font-size: 1.6rem;
+}
+
+.round-info {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  background: var(--bg-tertiary);
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+}
+
+.game-main {
+  display: flex;
+  flex: 1;
+  gap: 24px;
+  padding: 24px 32px;
+}
+
+.game-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.game-right {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   Football Pitch
+   ============================================ */
+
+.pitch-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pitch {
+  width: 100%;
+  max-width: 520px;
+  aspect-ratio: 68 / 105;
+  background: linear-gradient(180deg, #1a6b1a 0%, #145214 50%, #1a6b1a 100%);
+  border-radius: 12px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.pitch::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 40px,
+    rgba(255, 255, 255, 0.03) 40px,
+    rgba(255, 255, 255, 0.03) 80px
+  );
+  pointer-events: none;
+}
+
+.pitch-markings {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.center-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.center-line {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.penalty-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px;
+  height: 70px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.penalty-area.top {
+  top: 0;
+  border-top: none;
+}
+
+.penalty-area.bottom {
+  bottom: 0;
+  border-bottom: none;
+}
+
+.goal-area {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.goal-area.top {
+  top: 0;
+  border-top: none;
+}
+
+.goal-area.bottom {
+  bottom: 0;
+  border-bottom: none;
+}
+
+.corner-arc {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.corner-arc.tl { top: -8px; left: -8px; }
+.corner-arc.tr { top: -8px; right: -8px; }
+.corner-arc.bl { bottom: -8px; left: -8px; }
+.corner-arc.br { bottom: -8px; right: -8px; }
+
+/* Player Slots */
+.player-slot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.player-slot.empty {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  animation: slotPulse 2s ease-in-out infinite;
+}
+
+@keyframes slotPulse {
+  0%, 100% { box-shadow: 0 0 8px rgba(245, 197, 66, 0.1); }
+  50% { box-shadow: 0 0 16px rgba(245, 197, 66, 0.25); }
+}
+
+.player-slot.filled {
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-gold);
+  box-shadow: 0 0 16px rgba(245, 197, 66, 0.3), var(--shadow-card);
+}
+
+.slot-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.slot-player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 2px;
+}
+
+.slot-rating {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  line-height: 1;
+}
+
+.slot-name {
+  font-size: 0.55rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+.slot-flag {
+  font-size: 0.7rem;
+  margin-top: 1px;
+}
+
+/* ============================================
+   Draft Board
+   ============================================ */
+
+.draft-section {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  padding: 20px;
+  min-height: 200px;
+}
+
+.draft-board {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.draft-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.draft-squad-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.draft-flag {
+  font-size: 2rem;
+}
+
+.draft-squad-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.draft-round-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.draft-round-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.draft-round-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+  line-height: 1;
+}
+
+.player-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 14px;
+}
+
+/* Player Card */
+.player-card {
+  background: linear-gradient(145deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 14px 12px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.player-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--accent-gold);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 20px rgba(245, 197, 66, 0.15);
+}
+
+.card-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 0%, rgba(245, 197, 66, 0.08) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.player-card:hover .card-glow {
+  opacity: 1;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-rating {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--accent-gold);
+}
+
+.card-flag {
+  font-size: 1.2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-name {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.card-positions {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Draft Complete Message */
+.draft-complete-message {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.complete-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.draft-complete-message h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  margin: 0 0 8px 0;
+}
+
+.draft-complete-message p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Next Round Button */
+.next-round-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ============================================
+   Team Panel
+   ============================================ */
+
+.team-panel {
+  background: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-subtle);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 80px;
+}
+
+.panel-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.stat-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.stat-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.match-btn-wrapper {
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+/* ============================================
+   Modal
+   ============================================ */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  max-width: 420px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), var(--shadow-glow);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+  background: linear-gradient(135deg, rgba(245, 197, 66, 0.05) 0%, transparent 60%);
+}
+
+.modal-player-flag {
+  font-size: 3rem;
+}
+
+.modal-player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.modal-player-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.modal-player-rating {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+.modal-player-rating span {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-section-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+.modal-section-title.occupied {
+  color: var(--text-muted);
+}
+
+.modal-positions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-positions.occupied {
+  opacity: 0.5;
+}
+
+.modal-position-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-position-option:hover:not(.disabled) {
+  border-color: var(--accent-gold);
+  background: rgba(245, 197, 66, 0.05);
+}
+
+.modal-position-option.selected {
+  border-color: var(--accent-gold);
+  background: rgba(245, 197, 66, 0.1);
+}
+
+.modal-position-option.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.modal-position-option input[type="radio"] {
+  display: none;
+}
+
+.position-radio {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--text-muted);
+  border-radius: 50%;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.modal-position-option.selected .position-radio {
+  border-color: var(--accent-gold);
+  background: var(--accent-gold);
+}
+
+.modal-position-option.selected .position-radio::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: var(--bg-primary);
+  border-radius: 50%;
+}
+
+.position-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.position-occupied-by {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.modal-no-positions {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+/* ============================================
+   Buttons
+   ============================================ */
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--accent-gold) 0%, var(--accent-gold-dim) 100%);
+  color: #0B0F14;
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(245, 197, 66, 0.3);
+}
+
+.btn-primary:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-subtle);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.btn-match {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #2ECC71 0%, #27ae60 100%);
+  color: white;
+  border-radius: 12px;
+}
+
+.btn-match:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(46, 204, 113, 0.3);
+}
+
+.btn-match:disabled {
+  background: var(--bg-tertiary);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-match.ready {
+  animation: readyPulse 2s ease-in-out infinite;
+}
+
+@keyframes readyPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(46, 204, 113, 0); }
+}
+
+/* Ripple effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(0);
+  animation: rippleAnim 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes rippleAnim {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   Flying Player Animation
+   ============================================ */
+
+.flying-player {
+  border-radius: 12px;
+  background: linear-gradient(145deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* ============================================
+   Error & Utility
+   ============================================ */
+
+.error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: 1.2rem;
+  color: var(--accent-red);
+}
+
+.draft-empty {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 1rem;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 1024px) {
+  .formation-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .game-main {
+    flex-direction: column;
+  }
+
+  .game-right {
+    width: 100%;
+  }
+
+  .team-panel {
+    position: static;
+  }
+
+  .pitch {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 640px) {
+  .game-title {
+    font-size: 2.2rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .formation-cards {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+
+  .game-header {
+    padding: 12px 16px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .game-main {
+    padding: 16px;
+  }
+
+  .player-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pitch {
+    max-width: 300px;
+  }
+
+  .player-slot {
+    width: 48px;
+    height: 48px;
+  }
+
+  .slot-name {
+    font-size: 0.45rem;
+    max-width: 44px;
+  }
+
+  .slot-rating {
+    font-size: 0.7rem;
+  }
+
+  .modal-content {
+    margin: 10px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-subtle);
+}
