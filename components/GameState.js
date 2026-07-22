@@ -8,65 +8,65 @@ export const FORMATIONS = {
   '4-3-3': {
     name: '4-3-3',
     positions: [
-      { id: 'gk',  label: 'GK',  x: 50, y: 88 },
-      { id: 'lb',  label: 'LB',  x: 15, y: 68 },
-      { id: 'cb1', label: 'CB',  x: 38, y: 68 },
-      { id: 'cb2', label: 'CB',  x: 62, y: 68 },
-      { id: 'rb',  label: 'RB',  x: 85, y: 68 },
-      { id: 'cm1', label: 'CM',  x: 30, y: 48 },
-      { id: 'cm2', label: 'CM',  x: 50, y: 48 },
-      { id: 'cm3', label: 'CM',  x: 70, y: 48 },
-      { id: 'lw',  label: 'LW',  x: 20, y: 28 },
-      { id: 'st',  label: 'ST',  x: 50, y: 18 },
-      { id: 'rw',  label: 'RW',  x: 80, y: 28 }
+      { id: 'gk',  label: 'GK',  x: 48, y: 88 },
+      { id: 'lb',  label: 'LB',  x: 13, y: 68 },
+      { id: 'cb1', label: 'CB',  x: 36, y: 68 },
+      { id: 'cb2', label: 'CB',  x: 60, y: 68 },
+      { id: 'rb',  label: 'RB',  x: 83, y: 68 },
+      { id: 'cm1', label: 'CM',  x: 28, y: 48 },
+      { id: 'cm2', label: 'CM',  x: 48, y: 48 },
+      { id: 'cm3', label: 'CM',  x: 68, y: 48 },
+      { id: 'lw',  label: 'LW',  x: 18, y: 28 },
+      { id: 'st',  label: 'ST',  x: 48, y: 18 },
+      { id: 'rw',  label: 'RW',  x: 78, y: 28 }
     ]
   },
   '4-2-3-1': {
     name: '4-2-3-1',
     positions: [
-      { id: 'gk',  label: 'GK',  x: 50, y: 88 },
-      { id: 'lb',  label: 'LB',  x: 15, y: 68 },
-      { id: 'cb1', label: 'CB',  x: 38, y: 68 },
-      { id: 'cb2', label: 'CB',  x: 62, y: 68 },
-      { id: 'rb',  label: 'RB',  x: 85, y: 68 },
-      { id: 'cdm1', label: 'CDM', x: 38, y: 52 },
-      { id: 'cdm2', label: 'CDM', x: 62, y: 52 },
-      { id: 'cam', label: 'CAM', x: 50, y: 35 },
-      { id: 'lw',  label: 'LW',  x: 20, y: 30 },
-      { id: 'st',  label: 'ST',  x: 50, y: 15 },
-      { id: 'rw',  label: 'RW',  x: 80, y: 30 }
+      { id: 'gk',  label: 'GK',  x: 48, y: 88 },
+      { id: 'lb',  label: 'LB',  x: 13, y: 68 },
+      { id: 'cb1', label: 'CB',  x: 36, y: 68 },
+      { id: 'cb2', label: 'CB',  x: 60, y: 68 },
+      { id: 'rb',  label: 'RB',  x: 83, y: 68 },
+      { id: 'cdm1', label: 'CDM', x: 36, y: 52 },
+      { id: 'cdm2', label: 'CDM', x: 60, y: 52 },
+      { id: 'cam', label: 'CAM', x: 48, y: 35 },
+      { id: 'lw',  label: 'LW',  x: 18, y: 30 },
+      { id: 'st',  label: 'ST',  x: 48, y: 15 },
+      { id: 'rw',  label: 'RW',  x: 78, y: 30 }
     ]
   },
   '4-4-2': {
     name: '4-4-2',
     positions: [
-      { id: 'gk',  label: 'GK',  x: 50, y: 88 },
-      { id: 'lb',  label: 'LB',  x: 15, y: 68 },
-      { id: 'cb1', label: 'CB',  x: 38, y: 68 },
-      { id: 'cb2', label: 'CB',  x: 62, y: 68 },
-      { id: 'rb',  label: 'RB',  x: 85, y: 68 },
-      { id: 'lm',  label: 'LM',  x: 15, y: 45 },
-      { id: 'cm1', label: 'CM',  x: 38, y: 45 },
-      { id: 'cm2', label: 'CM',  x: 62, y: 45 },
-      { id: 'rm',  label: 'RM',  x: 85, y: 45 },
-      { id: 'st1', label: 'ST',  x: 38, y: 18 },
-      { id: 'st2', label: 'ST',  x: 62, y: 18 }
+      { id: 'gk',  label: 'GK',  x: 48, y: 88 },
+      { id: 'lb',  label: 'LB',  x: 13, y: 68 },
+      { id: 'cb1', label: 'CB',  x: 36, y: 68 },
+      { id: 'cb2', label: 'CB',  x: 60, y: 68 },
+      { id: 'rb',  label: 'RB',  x: 83, y: 68 },
+      { id: 'lm',  label: 'LM',  x: 13, y: 45 },
+      { id: 'cm1', label: 'CM',  x: 36, y: 45 },
+      { id: 'cm2', label: 'CM',  x: 60, y: 45 },
+      { id: 'rm',  label: 'RM',  x: 83, y: 45 },
+      { id: 'st1', label: 'ST',  x: 36, y: 18 },
+      { id: 'st2', label: 'ST',  x: 60, y: 18 }
     ]
   },
   '3-5-2': {
     name: '3-5-2',
     positions: [
-      { id: 'gk',  label: 'GK',  x: 50, y: 88 },
-      { id: 'cb1', label: 'CB',  x: 30, y: 68 },
-      { id: 'cb2', label: 'CB',  x: 50, y: 68 },
-      { id: 'cb3', label: 'CB',  x: 70, y: 68 },
-      { id: 'lwb', label: 'LWB', x: 15, y: 45 },
-      { id: 'cm1', label: 'CM',  x: 35, y: 45 },
-      { id: 'cm2', label: 'CM',  x: 50, y: 45 },
-      { id: 'cm3', label: 'CM',  x: 65, y: 45 },
-      { id: 'rwb', label: 'RWB', x: 85, y: 45 },
-      { id: 'st1', label: 'ST',  x: 38, y: 18 },
-      { id: 'st2', label: 'ST',  x: 62, y: 18 }
+      { id: 'gk',  label: 'GK',  x: 48, y: 88 },
+      { id: 'cb1', label: 'CB',  x: 28, y: 68 },
+      { id: 'cb2', label: 'CB',  x: 48, y: 68 },
+      { id: 'cb3', label: 'CB',  x: 68, y: 68 },
+      { id: 'lwb', label: 'LWB', x: 13, y: 45 },
+      { id: 'cm1', label: 'CM',  x: 33, y: 45 },
+      { id: 'cm2', label: 'CM',  x: 48, y: 45 },
+      { id: 'cm3', label: 'CM',  x: 63, y: 45 },
+      { id: 'rwb', label: 'RWB', x: 83, y: 45 },
+      { id: 'st1', label: 'ST',  x: 36, y: 18 },
+      { id: 'st2', label: 'ST',  x: 60, y: 18 }
     ]
   }
 };

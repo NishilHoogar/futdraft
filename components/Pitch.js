@@ -42,8 +42,11 @@ export function renderPitch(container) {
     slot.className = 'player-slot';
     slot.dataset.positionId = pos.id;
     slot.dataset.positionLabel = pos.label;
-    slot.style.left = pos.x + '%';
-    slot.style.top = pos.y + '%';
+
+    const correctedX = Math.max(8, Math.min(92, pos.x - 4));
+    slot.style.setProperty('--slot-x', `${correctedX}%`);
+    slot.style.setProperty('--slot-y', `${pos.y}%`);
+    slot.style.setProperty('--slot-size', 'clamp(54px, 8vw, 78px)');
 
     const existing = gameState.selectedPlayers[pos.id];
     if (existing) {
